@@ -4,7 +4,8 @@
 ![platforms](https://img.shields.io/badge/platforms-Flutter%20%7C%20Compose%20%7C%20SwiftUI%20%7C%20RN-green)
 ![license](https://img.shields.io/badge/license-MIT-brightgreen)
 
-An AI instruction set that audits and fixes mobile app UI/UX using clean design rules.
+An AI instruction set that enforces mobile UI/UX conventions on every agent interaction.
+Most design rules get specified once, forgotten by the next prompt, and inconsistently applied across the codebase. pixel-discipline loads your conventions into every relevant session so you don't have to re-specify them, and so your agent can't ignore them.
 Works with any AI coding agent that reads markdown.
 
 **Every element must earn its place.**
@@ -15,7 +16,11 @@ Works with any AI coding agent that reads markdown.
 
 ## What It Does
 
-Pixel Discipline loads only what it needs for the specified task.
+Two things.
+1) Eliminates prompt overhead: no more re-specifying spacing grids, palette rules, or font constraints on every UI prompt. Load once, applied consistently.
+2) Enforces rules per interaction, not per revamp. Conventions are checked on every element change, not just when you ask for a full audit.
+
+It loads only what it needs for the specified task.
 It keeps token usage minimal, while it applies these five rules:
 
 1. **Limit your color palette**: 60-30-10 rule, 3 roles max.
